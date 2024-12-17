@@ -1,6 +1,7 @@
 package com.emabrkx.FirstJobApp.job;
 
 import com.emabrkx.FirstJobApp.company.Company;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 //@Table(name = "job_table")
@@ -16,6 +17,7 @@ public class Job {
     private String maxSalary;
     private String location;
 
+//    @JsonIgnore
     @ManyToOne
     private Company company;
 
